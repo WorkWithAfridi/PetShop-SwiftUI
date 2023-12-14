@@ -26,14 +26,38 @@ struct SignupView: View {
             CustomTextField(controller: $emailController, hintText: "Email")
                 .padding(.bottom, 15)
             CustomTextField(controller: $passwordController, hintText: "Password")
-                .padding(.bottom, 10)
-            Toggle(isOn: $agreedToTermsandConditions) {
-                Text("I Agree to the Terms of Service and Privacy Policy")
+                .padding(.bottom, 20)
+            HStack (alignment: .top) {
+                Image(systemName: agreedToTermsandConditions ? "checkmark.square" : "square")
+                    .font(Font.title3.weight(agreedToTermsandConditions ? .semibold : .light))
+                    .foregroundColor( agreedToTermsandConditions ? .orange : Color("TextGrey"))
+                Text("I Agree to the ")
+                    .foregroundColor(Color("TextGrey"))
+                + Text("Terms of Service")
+                    .foregroundColor(.orange)
+                    .fontWeight(.bold)
+                + Text(" and ")
+                    .foregroundColor(Color("TextGrey"))
+                + Text("Privacy Policy")
+                    .foregroundColor(.orange)
+                    .fontWeight(.bold)
+                + Text(".")
+                    .foregroundColor(Color("TextGrey"))
             }
-            .toggleStyle(iOSCheckboxToggleStyle())
-            .padding()
-            
+            .onTapGesture {
+                agreedToTermsandConditions.toggle()
+            }
             Spacer()
+            HStack{
+                Spacer()
+                Text("Have an account?")
+                Text("Login ")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(.orange))
+                Spacer()
+            }
+            .font(.subheadline)
+            .padding(.bottom, 24)
             PrimaryButton(titleString: "Signin")
         }
         .padding(.horizontal, 24)
