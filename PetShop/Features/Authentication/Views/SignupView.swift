@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct SignupView: View {
+    @Binding var showSignupPage : Bool
+    @Binding var showPage: Bool
     @State private var fnameController: String = ""
     @State private var emailController: String = ""
     @State private var passwordController: String = ""
     @State private var agreedToTermsandConditions = false
+    @EnvironmentObject var authenticationController: AuthenticationController
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("Create New\nAccount")
@@ -51,19 +55,21 @@ struct SignupView: View {
             HStack{
                 Spacer()
                 Text("Have an account?")
-                Text("Login ")
+                Text("Signin")
                     .fontWeight(.bold)
                     .foregroundColor(Color(.orange))
+                    .onTapGesture {
+                        showSignupPage.toggle()
+                    }
                 Spacer()
             }
             .font(.subheadline)
             .padding(.bottom, 24)
-            PrimaryButton(titleString: "Signin")
+            PrimaryButton(titleString: "Create account"){
+                authenticationController.isSignedIn = true
+                showPage.toggle()
+            }
         }
         .padding(.horizontal, 24)
     }
-}
-
-#Preview {
-    SignupView()
 }

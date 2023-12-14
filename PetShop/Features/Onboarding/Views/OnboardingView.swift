@@ -12,6 +12,8 @@ struct OnboardingView: View {
     
     @StateObject var onbordingController = OnbordingController()
     
+    @State private var showSigninPage = false
+    
     var body: some View {
         VStack{
             TabView(selection: $onbordingController.currentScreen ){
@@ -41,12 +43,13 @@ struct OnboardingView: View {
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             DotsIndicator(numberOfScreens: onbordingController.onboardingScreens.count, currentScreen: onbordingController.currentScreen)
                 .padding(.bottom, 24)
-            NavigationLink {
-                SigninView()
-            } label: {
-                PrimaryButton(titleString: "Get Started")
-                    .padding(.horizontal, 24)
+            PrimaryButton(titleString: "Get Started"){
+                showSigninPage.toggle()
             }
+            .padding(.horizontal, 24)
+        }
+        .sheet(isPresented: $showSigninPage) {
+            SigninView(showPage: $showSigninPage)
         }
     }
 }

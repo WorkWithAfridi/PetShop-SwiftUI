@@ -31,7 +31,7 @@ struct ForgotPasswordView: View {
             }
             .font(.subheadline)
             .padding(.bottom, 24)
-            PrimaryButton(titleString: "Signin")
+            PrimaryButton(titleString: "Reset Password")
         }
         .padding(.horizontal, 24)
     }

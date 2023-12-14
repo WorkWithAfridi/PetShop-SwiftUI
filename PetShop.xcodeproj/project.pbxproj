@@ -22,6 +22,9 @@
 		EFC37C992B2B131F006C3D92 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C982B2B131F006C3D92 /* SignupView.swift */; };
 		EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */; };
 		EFC37C9D2B2B20F3006C3D92 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C9C2B2B20F3006C3D92 /* ForgotPasswordView.swift */; };
+		EFC37CA12B2B28BA006C3D92 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37CA02B2B28BA006C3D92 /* DashboardView.swift */; };
+		EFC37CA42B2B3443006C3D92 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37CA32B2B3443006C3D92 /* AuthenticationController.swift */; };
+		EFC37CA62B2B3891006C3D92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37CA52B2B3891006C3D92 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		EFC37C982B2B131F006C3D92 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCheckbox.swift; sourceTree = "<group>"; };
 		EFC37C9C2B2B20F3006C3D92 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		EFC37CA02B2B28BA006C3D92 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		EFC37CA32B2B3443006C3D92 /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		EFC37CA52B2B3891006C3D92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 		EFC37C712B2AFE92006C3D92 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EFC37CA22B2B3431006C3D92 /* Controllers */,
 				EFC37C942B2B01AA006C3D92 /* Root */,
 				EFC37C722B2AFE98006C3D92 /* Components */,
 			);
@@ -147,6 +154,7 @@
 		EFC37C7B2B2AFF8C006C3D92 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EFC37C9E2B2B2898006C3D92 /* Dashboard */,
 				EFC37C902B2B007E006C3D92 /* Authentication */,
 				EFC37C852B2AFFE9006C3D92 /* Onboarding */,
 			);
@@ -211,6 +219,7 @@
 			children = (
 				EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */,
 				EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */,
+				EFC37CA52B2B3891006C3D92 /* ContentView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -221,6 +230,30 @@
 				EFC37C962B2B085F006C3D92 /* SocialMediaButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		EFC37C9E2B2B2898006C3D92 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EFC37C9F2B2B28A0006C3D92 /* Views */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		EFC37C9F2B2B28A0006C3D92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFC37CA02B2B28BA006C3D92 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFC37CA22B2B3431006C3D92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFC37CA32B2B3443006C3D92 /* AuthenticationController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +388,10 @@
 			files = (
 				EFC37C7A2B2AFF61006C3D92 /* CustomTextField.swift in Sources */,
 				EFC37C932B2B009F006C3D92 /* SigninView.swift in Sources */,
+				EFC37CA62B2B3891006C3D92 /* ContentView.swift in Sources */,
 				EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */,
+				EFC37CA42B2B3443006C3D92 /* AuthenticationController.swift in Sources */,
+				EFC37CA12B2B28BA006C3D92 /* DashboardView.swift in Sources */,
 				EFC37C8A2B2B001C006C3D92 /* OnboardingScreenModel.swift in Sources */,
 				EFC37C8D2B2B0037006C3D92 /* OnboardingView.swift in Sources */,
 				EFC37C742B2AFEAE006C3D92 /* DotsIndicator.swift in Sources */,

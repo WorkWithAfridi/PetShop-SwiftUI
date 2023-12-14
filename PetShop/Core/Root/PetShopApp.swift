@@ -10,11 +10,13 @@ import SwiftData
 
 @main
 struct PetShopApp: App {
+    @StateObject var authenticationController = AuthenticationController()
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                OnboardingView()
+                ContentView()
             }
+            .environmentObject(authenticationController)
         }
     }
 }
