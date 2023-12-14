@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PrimaryButton: View {
     var titleString : String
+    var action: (() -> Void)?
+    
     var body: some View {
         ZStack{
             Color.orange
@@ -16,7 +18,7 @@ struct PrimaryButton: View {
         .frame(height: 60)
         .cornerRadius(120)
         .overlay(content: {
-            Text("Get Started")
+            Text(titleString)
                 .font(.subheadline)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
@@ -25,5 +27,7 @@ struct PrimaryButton: View {
 }
 
 #Preview {
-    PrimaryButton(titleString: "Save")
+    PrimaryButton(titleString: "Save"){
+        print("Button tapped!")
+    }
 }

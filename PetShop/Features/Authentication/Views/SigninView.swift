@@ -23,7 +23,14 @@ struct SigninView: View {
             CustomTextField(controller: $emailController, hintText: "Email")
                 .padding(.bottom, 15)
             CustomTextField(controller: $passwordController, hintText: "Password")
-                .padding(.bottom, 15)
+                .padding(.bottom, 10)
+            HStack {
+                Spacer()
+                Text("Forgot Password?")
+                    .font(.footnote)
+                    .fontWeight(.bold)
+                .foregroundColor(.orange).padding(.bottom, 15)
+            }
             HStack(alignment: .center){
                 HorizontalDivider()
                 Text("or")
@@ -31,7 +38,15 @@ struct SigninView: View {
                 HorizontalDivider()
             }
             .padding(.bottom, 15)
+            HStack{
+                SocialMediaButton(title: "Google", buttonColor: Color("LightGrey"), textColor: Color(.red))
+                    .padding(.trailing, 5)
+                SocialMediaButton(title: "Facebook", buttonColor: Color("LightGrey"), textColor: Color(.blue))
+                    .padding(.leading, 5)
+            }
+            .frame(minWidth: 0, maxWidth: .infinity)
             
+            Spacer()
             Spacer()
             HStack{
                 Spacer()
@@ -43,7 +58,7 @@ struct SigninView: View {
             }
             .font(.subheadline)
             .padding(.bottom, 24)
-            PrimaryButton(titleString: "Get Started")
+            PrimaryButton(titleString: "Signin")
         }
         .padding(.horizontal, 24)
     }

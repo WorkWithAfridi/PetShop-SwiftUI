@@ -18,6 +18,9 @@
 		EFC37C8D2B2B0037006C3D92 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C8C2B2B0037006C3D92 /* OnboardingView.swift */; };
 		EFC37C8F2B2B0052006C3D92 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C8E2B2B0052006C3D92 /* OnboardingController.swift */; };
 		EFC37C932B2B009F006C3D92 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C922B2B009F006C3D92 /* SigninView.swift */; };
+		EFC37C972B2B085F006C3D92 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C962B2B085F006C3D92 /* SocialMediaButton.swift */; };
+		EFC37C992B2B131F006C3D92 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C982B2B131F006C3D92 /* SignupView.swift */; };
+		EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		EFC37C8C2B2B0037006C3D92 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EFC37C8E2B2B0052006C3D92 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		EFC37C922B2B009F006C3D92 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		EFC37C962B2B085F006C3D92 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
+		EFC37C982B2B131F006C3D92 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCheckbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 				EFC37C752B2AFEFB006C3D92 /* PrimaryButton.swift */,
 				EFC37C772B2AFF44006C3D92 /* HorizontalDivider.swift */,
 				EFC37C792B2AFF61006C3D92 /* CustomTextField.swift */,
+				EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 		EFC37C902B2B007E006C3D92 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				EFC37C952B2B084C006C3D92 /* Components */,
 				EFC37C912B2B008F006C3D92 /* Views */,
 			);
 			path = Authentication;
@@ -190,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC37C922B2B009F006C3D92 /* SigninView.swift */,
+				EFC37C982B2B131F006C3D92 /* SignupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +210,14 @@
 				EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		EFC37C952B2B084C006C3D92 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EFC37C962B2B085F006C3D92 /* SocialMediaButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +352,7 @@
 			files = (
 				EFC37C7A2B2AFF61006C3D92 /* CustomTextField.swift in Sources */,
 				EFC37C932B2B009F006C3D92 /* SigninView.swift in Sources */,
+				EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */,
 				EFC37C8A2B2B001C006C3D92 /* OnboardingScreenModel.swift in Sources */,
 				EFC37C8D2B2B0037006C3D92 /* OnboardingView.swift in Sources */,
 				EFC37C742B2AFEAE006C3D92 /* DotsIndicator.swift in Sources */,
@@ -342,6 +360,8 @@
 				EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */,
 				EFC37C8F2B2B0052006C3D92 /* OnboardingController.swift in Sources */,
 				EFC37C782B2AFF44006C3D92 /* HorizontalDivider.swift in Sources */,
+				EFC37C992B2B131F006C3D92 /* SignupView.swift in Sources */,
+				EFC37C972B2B085F006C3D92 /* SocialMediaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
