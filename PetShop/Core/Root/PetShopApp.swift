@@ -12,7 +12,9 @@ import SwiftData
 struct PetShopApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            NavigationStack{
+                OnboardingView()
+            }
         }
     }
 }

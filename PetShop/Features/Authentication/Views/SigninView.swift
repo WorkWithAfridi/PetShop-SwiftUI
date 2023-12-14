@@ -26,10 +26,16 @@ struct SigninView: View {
                 .padding(.bottom, 10)
             HStack {
                 Spacer()
-                Text("Forgot Password?")
-                    .font(.footnote)
-                    .fontWeight(.bold)
-                .foregroundColor(.orange).padding(.bottom, 15)
+                NavigationLink {
+                    ForgotPasswordView()
+                } label: {
+                    
+                    Text("Forgot Password?")
+                        .font(.footnote)
+                        .fontWeight(.bold)
+                        .foregroundColor(.orange).padding(.bottom, 15)
+                }
+                
             }
             HStack(alignment: .center){
                 HorizontalDivider()
@@ -51,9 +57,15 @@ struct SigninView: View {
             HStack{
                 Spacer()
                 Text("Don't have an account?")
-                Text("Create Account")
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(.orange))
+                NavigationLink {
+                    SignupView()
+                } label: {
+                    
+                    Text("Create Account")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(.orange))
+                }
+
                 Spacer()
             }
             .font(.subheadline)
