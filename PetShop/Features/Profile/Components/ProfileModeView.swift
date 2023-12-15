@@ -19,7 +19,6 @@ struct ProfileModeView: View {
                             .frame(height: 200)
                             .frame(maxWidth: .infinity)
                             .clipShape(RoundedRectangle(cornerRadius: 30))
-                            .shadow(radius: 5)
                         Spacer()
                     }
                     VStack (alignment: .center){
