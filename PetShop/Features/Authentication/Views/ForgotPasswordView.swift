@@ -17,7 +17,7 @@ struct ForgotPasswordView: View {
                 .fontWeight(.bold)
                 .padding(.vertical, 30)
             Text("Quis tempor aliqua mollit labore laborum officia ex culpa deserunt.")
-                .foregroundColor(Color("TextGrey"))
+                .foregroundColor(Color("898989"))
                 .padding(.bottom, 20)
             CustomTextField(controller: $emailController, hintText: "Email")
                 .padding(.bottom, 15)

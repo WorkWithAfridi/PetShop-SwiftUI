@@ -14,7 +14,7 @@ struct MenuListButton: View {
     var body: some View {
         HStack{
             ZStack(alignment: .center){
-                Color("LightGrey")
+                Color("F8F8F8")
                 Image(systemName: buttonIcon)
 //                    .resizable()
 //                    .frame(width: 15, height: 15)

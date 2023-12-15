@@ -55,7 +55,7 @@ struct MenuView: View {
                     }
                         .padding(.bottom, 30)
                 }
-                .padding(.horizontal, 24)
+                .padding(.horizontal, 16)
             }
             Spacer()
         }

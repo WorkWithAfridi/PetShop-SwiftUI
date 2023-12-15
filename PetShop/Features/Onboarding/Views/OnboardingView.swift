@@ -35,7 +35,7 @@ struct OnboardingView: View {
                         Text(screenData.description)
                             .padding(.horizontal, 24)
                             .padding(.bottom, 24)
-                            .foregroundColor(Color("TextGrey"))
+                            .foregroundColor(Color("898989"))
                     }
                     .tag(index)
                 }

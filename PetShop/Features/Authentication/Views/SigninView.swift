@@ -21,7 +21,7 @@ struct SigninView: View {
                 .fontWeight(.bold)
                 .padding(.vertical, 10)
             Text("Quis tempor aliqua mollit labore laborum officia ex culpa deserunt.")
-                .foregroundColor(Color("TextGrey"))
+                .foregroundColor(Color("898989"))
                 .padding(.bottom, 40)
             CustomTextField(controller: $emailController, hintText: "Email")
                 .padding(.bottom, 15)
@@ -45,9 +45,9 @@ struct SigninView: View {
             }
             .padding(.bottom, 15)
             HStack{
-                SocialMediaButton(title: "Google", buttonColor: Color("LightGrey"), textColor: Color(.red))
+                SocialMediaButton(title: "Google", buttonColor: Color("E5E4E3"), textColor: Color(.red))
                     .padding(.trailing, 5)
-                SocialMediaButton(title: "Facebook", buttonColor: Color("LightGrey"), textColor: Color(.blue))
+                SocialMediaButton(title: "Facebook", buttonColor: Color("E5E4E3"), textColor: Color(.blue))
                     .padding(.leading, 5)
             }
             .frame(minWidth: 0, maxWidth: .infinity)

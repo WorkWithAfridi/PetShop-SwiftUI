@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DashboardView: View {
     @State private var selectedTabIndex: Int = 0
+    @StateObject var profileController: ProfileController = ProfileController()
     var body: some View {
         TabView(selection: $selectedTabIndex){
             VStack {
@@ -47,11 +48,8 @@ struct DashboardView: View {
                 }
             }
             .tag(2)
-            VStack {
-                Spacer()
-                Text("Profile")
-                Spacer()
-            }
+            ProfileView()
+                .environmentObject(profileController)
             .tabItem {
                 VStack {
                     Image(uiImage: UIImage(named: selectedTabIndex == 3 ?  "profile_filled" : "profile_outlined")!)
@@ -69,6 +67,16 @@ struct DashboardView: View {
             .tag(4)
         }
         .tint(.orange)
+        .onAppear {
+            // correct the transparency bug for Tab bars
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+            // correct the transparency bug for Navigation bars
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithOpaqueBackground()
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
     }
 }
 

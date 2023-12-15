@@ -16,7 +16,7 @@ struct DotsIndicator: View {
                 index in
                 Circle()
                     .frame(width: 10, height: 10)
-                    .foregroundColor(index == currentScreen  ? Color(.orange) : Color("LightGrey") )
+                    .foregroundColor(index == currentScreen  ? Color(.orange) : Color("E5E4E3") )
                     .padding(.horizontal, 4)
             }
         }

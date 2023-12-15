@@ -15,7 +15,7 @@ struct CustomTextField: View {
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 15)
-                    .stroke(controller.count > 0 ? .orange : Color("LightGrey"), lineWidth: 2)
+                    .stroke(controller.count > 0 ? .orange : Color("E5E4E3"), lineWidth: 2)
             )
     }
 }

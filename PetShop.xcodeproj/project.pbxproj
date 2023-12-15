@@ -12,6 +12,14 @@
 		EF5BA5042B2C2229008D9B83 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5032B2C2229008D9B83 /* MenuView.swift */; };
 		EF5BA5072B2C25C3008D9B83 /* MenuListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5062B2C25C3008D9B83 /* MenuListButton.swift */; };
 		EF5BA5092B2C3EB2008D9B83 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5082B2C3EB2008D9B83 /* OutlinedButton.swift */; };
+		EF5BA50D2B2C3FD1008D9B83 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA50C2B2C3FD1008D9B83 /* ProfileView.swift */; };
+		EF5BA5102B2C401B008D9B83 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA50F2B2C401B008D9B83 /* ProfileController.swift */; };
+		EF5BA51A2B2C4794008D9B83 /* SelectProfileModeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5192B2C4794008D9B83 /* SelectProfileModeWidget.swift */; };
+		EF5BA51C2B2C487E008D9B83 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA51B2B2C487E008D9B83 /* NetworkImage.swift */; };
+		EF5BA51E2B2C4A95008D9B83 /* CircularAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA51D2B2C4A95008D9B83 /* CircularAvatar.swift */; };
+		EF5BA5202B2C5537008D9B83 /* ProfileModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA51F2B2C5537008D9B83 /* ProfileModeView.swift */; };
+		EF5BA5232B2C5689008D9B83 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5222B2C5689008D9B83 /* ProductModel.swift */; };
+		EF5BA5262B2C640B008D9B83 /* MinimizedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5252B2C640B008D9B83 /* MinimizedItemView.swift */; };
 		EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */; };
 		EFC37C4C2B2AFE89006C3D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */; };
 		EFC37C4F2B2AFE89006C3D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4E2B2AFE89006C3D92 /* Preview Assets.xcassets */; };
@@ -55,6 +63,14 @@
 		EF5BA5032B2C2229008D9B83 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EF5BA5062B2C25C3008D9B83 /* MenuListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListButton.swift; sourceTree = "<group>"; };
 		EF5BA5082B2C3EB2008D9B83 /* OutlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
+		EF5BA50C2B2C3FD1008D9B83 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EF5BA50F2B2C401B008D9B83 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		EF5BA5192B2C4794008D9B83 /* SelectProfileModeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileModeWidget.swift; sourceTree = "<group>"; };
+		EF5BA51B2B2C487E008D9B83 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		EF5BA51D2B2C4A95008D9B83 /* CircularAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularAvatar.swift; sourceTree = "<group>"; };
+		EF5BA51F2B2C5537008D9B83 /* ProfileModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModeView.swift; sourceTree = "<group>"; };
+		EF5BA5222B2C5689008D9B83 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		EF5BA5252B2C640B008D9B83 /* MinimizedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizedItemView.swift; sourceTree = "<group>"; };
 		EFC37C422B2AFE87006C3D92 /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopApp.swift; sourceTree = "<group>"; };
 		EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,12 +127,80 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		EF5BA5052B2C25B1008D9B83 /* Components */ = {
+		EF5BA5112B2C46D9008D9B83 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA5142B2C46EF008D9B83 /* Components */,
+				EF5BA5122B2C46E1008D9B83 /* Views */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		EF5BA5122B2C46E1008D9B83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA5032B2C2229008D9B83 /* MenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF5BA5142B2C46EF008D9B83 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				EF5BA5062B2C25C3008D9B83 /* MenuListButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		EF5BA5152B2C4700008D9B83 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA5182B2C471E008D9B83 /* Components */,
+				EF5BA5172B2C4712008D9B83 /* Controller */,
+				EF5BA5162B2C470C008D9B83 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EF5BA5162B2C470C008D9B83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA50C2B2C3FD1008D9B83 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF5BA5172B2C4712008D9B83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA50F2B2C401B008D9B83 /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF5BA5182B2C471E008D9B83 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA5192B2C4794008D9B83 /* SelectProfileModeWidget.swift */,
+				EF5BA51F2B2C5537008D9B83 /* ProfileModeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EF5BA5212B2C5679008D9B83 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA5222B2C5689008D9B83 /* ProductModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF5BA5242B2C595A008D9B83 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		EFC37C392B2AFE87006C3D92 = {
@@ -158,6 +242,8 @@
 		EFC37C712B2AFE92006C3D92 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EF5BA5242B2C595A008D9B83 /* Assets */,
+				EF5BA5212B2C5679008D9B83 /* Data */,
 				EFC37C942B2B01AA006C3D92 /* Root */,
 				EFC37C722B2AFE98006C3D92 /* Components */,
 			);
@@ -173,6 +259,9 @@
 				EFC37C792B2AFF61006C3D92 /* CustomTextField.swift */,
 				EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */,
 				EF5BA5082B2C3EB2008D9B83 /* OutlinedButton.swift */,
+				EF5BA51B2B2C487E008D9B83 /* NetworkImage.swift */,
+				EF5BA51D2B2C4A95008D9B83 /* CircularAvatar.swift */,
+				EF5BA5252B2C640B008D9B83 /* MinimizedItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -180,6 +269,8 @@
 		EFC37C7B2B2AFF8C006C3D92 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EF5BA5152B2C4700008D9B83 /* Profile */,
+				EF5BA5112B2C46D9008D9B83 /* Menu */,
 				EFC37C9E2B2B2898006C3D92 /* Dashboard */,
 				EFC37C902B2B007E006C3D92 /* Authentication */,
 				EFC37C852B2AFFE9006C3D92 /* Onboarding */,
@@ -246,7 +337,6 @@
 		EFC37C942B2B01AA006C3D92 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */,
 				EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */,
 				EFC37CA52B2B3891006C3D92 /* ContentView.swift */,
 			);
@@ -264,7 +354,6 @@
 		EFC37C9E2B2B2898006C3D92 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				EF5BA5052B2C25B1008D9B83 /* Components */,
 				EFC37C9F2B2B28A0006C3D92 /* Views */,
 			);
 			path = Dashboard;
@@ -274,7 +363,6 @@
 			isa = PBXGroup;
 			children = (
 				EFC37CA02B2B28BA006C3D92 /* DashboardView.swift */,
-				EF5BA5032B2C2229008D9B83 /* MenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -418,25 +506,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5BA5072B2C25C3008D9B83 /* MenuListButton.swift in Sources */,
+				EF5BA51C2B2C487E008D9B83 /* NetworkImage.swift in Sources */,
 				EFC37C7A2B2AFF61006C3D92 /* CustomTextField.swift in Sources */,
 				EFC37C932B2B009F006C3D92 /* SigninView.swift in Sources */,
 				EFC37CA62B2B3891006C3D92 /* ContentView.swift in Sources */,
 				EF5BA5042B2C2229008D9B83 /* MenuView.swift in Sources */,
+				EF5BA5262B2C640B008D9B83 /* MinimizedItemView.swift in Sources */,
 				EF5BA5092B2C3EB2008D9B83 /* OutlinedButton.swift in Sources */,
 				EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */,
 				EFC37CA42B2B3443006C3D92 /* AuthenticationController.swift in Sources */,
 				EFC37CA12B2B28BA006C3D92 /* DashboardView.swift in Sources */,
+				EF5BA5102B2C401B008D9B83 /* ProfileController.swift in Sources */,
 				EF5BA5002B2C1B6C008D9B83 /* AuthPageEnum.swift in Sources */,
 				EFC37C8A2B2B001C006C3D92 /* OnboardingScreenModel.swift in Sources */,
+				EF5BA51E2B2C4A95008D9B83 /* CircularAvatar.swift in Sources */,
 				EFC37C8D2B2B0037006C3D92 /* OnboardingView.swift in Sources */,
 				EFC37C742B2AFEAE006C3D92 /* DotsIndicator.swift in Sources */,
 				EFC37C762B2AFEFB006C3D92 /* PrimaryButton.swift in Sources */,
 				EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */,
 				EFC37C9D2B2B20F3006C3D92 /* ForgotPasswordView.swift in Sources */,
+				EF5BA5232B2C5689008D9B83 /* ProductModel.swift in Sources */,
 				EFC37C8F2B2B0052006C3D92 /* OnboardingController.swift in Sources */,
+				EF5BA51A2B2C4794008D9B83 /* SelectProfileModeWidget.swift in Sources */,
 				EF5BA5022B2C1BCD008D9B83 /* AuthenticationView.swift in Sources */,
 				EFC37C782B2AFF44006C3D92 /* HorizontalDivider.swift in Sources */,
 				EFC37C992B2B131F006C3D92 /* SignupView.swift in Sources */,
+				EF5BA5202B2C5537008D9B83 /* ProfileModeView.swift in Sources */,
+				EF5BA50D2B2C3FD1008D9B83 /* ProfileView.swift in Sources */,
 				EFC37C972B2B085F006C3D92 /* SocialMediaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
