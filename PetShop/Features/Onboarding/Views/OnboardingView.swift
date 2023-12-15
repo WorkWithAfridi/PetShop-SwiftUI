@@ -44,13 +44,12 @@ struct OnboardingView: View {
             DotsIndicator(numberOfScreens: onboardingController.onboardingScreens.count, currentScreen: onboardingController.currentScreen)
                 .padding(.bottom, 24)
             PrimaryButton(titleString: "Get Started"){
-                authenticationController.showAuthBottomSheet = true
-                authenticationController.showSignupView = false
+                authenticationController.openAuthSheet()
             }
             .padding(.horizontal, 24)
         }
         .sheet(isPresented: $authenticationController.showAuthBottomSheet) {
-            SigninView()
+            AuthenticationView()
         }
     }
 }

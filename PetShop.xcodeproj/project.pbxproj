@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5BA5002B2C1B6C008D9B83 /* AuthPageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA4FF2B2C1B6C008D9B83 /* AuthPageEnum.swift */; };
+		EF5BA5022B2C1BCD008D9B83 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */; };
 		EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */; };
 		EFC37C4C2B2AFE89006C3D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */; };
 		EFC37C4F2B2AFE89006C3D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4E2B2AFE89006C3D92 /* Preview Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF5BA4FF2B2C1B6C008D9B83 /* AuthPageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPageEnum.swift; sourceTree = "<group>"; };
+		EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		EFC37C422B2AFE87006C3D92 /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopApp.swift; sourceTree = "<group>"; };
 		EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF5BA4FE2B2C1B3F008D9B83 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF5BA4FF2B2C1B6C008D9B83 /* AuthPageEnum.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EFC37C392B2AFE87006C3D92 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +209,7 @@
 		EFC37C902B2B007E006C3D92 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				EF5BA4FE2B2C1B3F008D9B83 /* Helpers */,
 				EFD6B7AE2B2BF99400A07F4A /* Controller */,
 				EFC37C952B2B084C006C3D92 /* Components */,
 				EFC37C912B2B008F006C3D92 /* Views */,
@@ -210,6 +223,7 @@
 				EFC37C922B2B009F006C3D92 /* SigninView.swift */,
 				EFC37C982B2B131F006C3D92 /* SignupView.swift */,
 				EFC37C9C2B2B20F3006C3D92 /* ForgotPasswordView.swift */,
+				EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +406,7 @@
 				EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */,
 				EFC37CA42B2B3443006C3D92 /* AuthenticationController.swift in Sources */,
 				EFC37CA12B2B28BA006C3D92 /* DashboardView.swift in Sources */,
+				EF5BA5002B2C1B6C008D9B83 /* AuthPageEnum.swift in Sources */,
 				EFC37C8A2B2B001C006C3D92 /* OnboardingScreenModel.swift in Sources */,
 				EFC37C8D2B2B0037006C3D92 /* OnboardingView.swift in Sources */,
 				EFC37C742B2AFEAE006C3D92 /* DotsIndicator.swift in Sources */,
@@ -399,6 +414,7 @@
 				EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */,
 				EFC37C9D2B2B20F3006C3D92 /* ForgotPasswordView.swift in Sources */,
 				EFC37C8F2B2B0052006C3D92 /* OnboardingController.swift in Sources */,
+				EF5BA5022B2C1BCD008D9B83 /* AuthenticationView.swift in Sources */,
 				EFC37C782B2AFF44006C3D92 /* HorizontalDivider.swift in Sources */,
 				EFC37C992B2B131F006C3D92 /* SignupView.swift in Sources */,
 				EFC37C972B2B085F006C3D92 /* SocialMediaButton.swift in Sources */,

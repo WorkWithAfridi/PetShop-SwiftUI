@@ -9,7 +9,30 @@ import Foundation
 import SwiftUI
 
 class AuthenticationController: ObservableObject {
+    @Published var authPage = AuthPageEnum.Signin
     @Published var isSignedIn = false
     @Published var showAuthBottomSheet = false
-    @Published var showSignupView = true
+    
+    func signInUser(){
+        isSignedIn = true
+        showAuthBottomSheet = false
+    }
+    
+    func openForgotPasswordView(){
+        authPage = AuthPageEnum.ForgotPassword
+    }
+    
+    func openSigninView(){
+        authPage = AuthPageEnum.Signin
+    }
+    
+    func openSignupView(){
+        authPage = AuthPageEnum.Signup
+    }
+    
+    func openAuthSheet(){
+        showAuthBottomSheet = true
+        authPage = AuthPageEnum.Signin
+    }
+    
 }

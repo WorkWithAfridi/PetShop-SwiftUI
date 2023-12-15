@@ -58,15 +58,14 @@ struct SignupView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(.orange))
                     .onTapGesture {
-                        authenticationController.showSignupView = false
+                        authenticationController.openSigninView()
                     }
                 Spacer()
             }
             .font(.subheadline)
             .padding(.bottom, 24)
             PrimaryButton(titleString: "Create account"){
-                authenticationController.isSignedIn = true
-                authenticationController.showAuthBottomSheet = false
+                authenticationController.signInUser()
             }
         }
         .padding(.horizontal, 24)

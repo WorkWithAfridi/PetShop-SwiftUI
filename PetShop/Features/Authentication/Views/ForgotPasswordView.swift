@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ForgotPasswordView: View {
     @State private var emailController: String = ""
+    @EnvironmentObject var authenticationController : AuthenticationController
     var body: some View {
         VStack(alignment: .leading){
             Text("Forgot\nPassword?!")
@@ -24,9 +25,12 @@ struct ForgotPasswordView: View {
             HStack{
                 Spacer()
                 Text("Have an account?")
-                Text("Login ")
+                Text("Signin ")
                     .fontWeight(.bold)
                     .foregroundColor(Color(.orange))
+                    .onTapGesture {
+                        authenticationController.openSigninView()
+                    }
                 Spacer()
             }
             .font(.subheadline)
