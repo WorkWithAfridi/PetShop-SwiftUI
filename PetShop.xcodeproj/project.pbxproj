@@ -114,9 +114,9 @@
 		EFC37C442B2AFE87006C3D92 /* PetShop */ = {
 			isa = PBXGroup;
 			children = (
-				EFC37C4D2B2AFE89006C3D92 /* Preview Content */,
-				EFC37C7B2B2AFF8C006C3D92 /* Features */,
 				EFC37C712B2AFE92006C3D92 /* Core */,
+				EFC37C7B2B2AFF8C006C3D92 /* Features */,
+				EFC37C4D2B2AFE89006C3D92 /* Preview Content */,
 			);
 			path = PetShop;
 			sourceTree = "<group>";
@@ -132,7 +132,6 @@
 		EFC37C712B2AFE92006C3D92 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EFC37CA22B2B3431006C3D92 /* Controllers */,
 				EFC37C942B2B01AA006C3D92 /* Root */,
 				EFC37C722B2AFE98006C3D92 /* Components */,
 			);
@@ -198,6 +197,7 @@
 		EFC37C902B2B007E006C3D92 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				EFD6B7AE2B2BF99400A07F4A /* Controller */,
 				EFC37C952B2B084C006C3D92 /* Components */,
 				EFC37C912B2B008F006C3D92 /* Views */,
 			);
@@ -248,12 +248,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		EFC37CA22B2B3431006C3D92 /* Controllers */ = {
+		EFD6B7AE2B2BF99400A07F4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EFC37CA32B2B3443006C3D92 /* AuthenticationController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
