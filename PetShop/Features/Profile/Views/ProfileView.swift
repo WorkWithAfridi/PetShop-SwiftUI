@@ -12,17 +12,12 @@ struct ProfileView: View {
     var body: some View {
         VStack{
             SelectProfileModeWidget()
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 60)
             ScrollView {
                 if profileController.isProfileMode{
                     ProfileModeView()
                 } else{
-                    VStack{
-                        
-                            Text("Seller mode view")
-                        Color(.orange)
-                            .frame(height: 800)
-                    }
+                    SellerModeView()
                 }
             }
         }
