@@ -18,6 +18,10 @@ class AuthenticationController: ObservableObject {
         showAuthBottomSheet = false
     }
     
+    func signOutUser(){
+        isSignedIn = false
+    }
+    
     func openForgotPasswordView(){
         authPage = AuthPageEnum.ForgotPassword
     }

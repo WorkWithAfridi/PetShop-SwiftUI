@@ -11,6 +11,7 @@
 		EF5BA5022B2C1BCD008D9B83 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */; };
 		EF5BA5042B2C2229008D9B83 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5032B2C2229008D9B83 /* MenuView.swift */; };
 		EF5BA5072B2C25C3008D9B83 /* MenuListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5062B2C25C3008D9B83 /* MenuListButton.swift */; };
+		EF5BA5092B2C3EB2008D9B83 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5082B2C3EB2008D9B83 /* OutlinedButton.swift */; };
 		EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */; };
 		EFC37C4C2B2AFE89006C3D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */; };
 		EFC37C4F2B2AFE89006C3D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4E2B2AFE89006C3D92 /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		EF5BA5032B2C2229008D9B83 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EF5BA5062B2C25C3008D9B83 /* MenuListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListButton.swift; sourceTree = "<group>"; };
+		EF5BA5082B2C3EB2008D9B83 /* OutlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 		EFC37C422B2AFE87006C3D92 /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopApp.swift; sourceTree = "<group>"; };
 		EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				EFC37C772B2AFF44006C3D92 /* HorizontalDivider.swift */,
 				EFC37C792B2AFF61006C3D92 /* CustomTextField.swift */,
 				EFC37C9A2B2B14A5006C3D92 /* iOSCheckbox.swift */,
+				EF5BA5082B2C3EB2008D9B83 /* OutlinedButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				EFC37C932B2B009F006C3D92 /* SigninView.swift in Sources */,
 				EFC37CA62B2B3891006C3D92 /* ContentView.swift in Sources */,
 				EF5BA5042B2C2229008D9B83 /* MenuView.swift in Sources */,
+				EF5BA5092B2C3EB2008D9B83 /* OutlinedButton.swift in Sources */,
 				EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */,
 				EFC37CA42B2B3443006C3D92 /* AuthenticationController.swift in Sources */,
 				EFC37CA12B2B28BA006C3D92 /* DashboardView.swift in Sources */,

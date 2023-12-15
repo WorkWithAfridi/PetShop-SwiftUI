@@ -10,13 +10,14 @@ import SwiftUI
 struct MenuListButton: View {
     var buttonName: String
     var buttonIcon: String
-    var action: (() -> Void)?
     
     var body: some View {
         HStack{
             ZStack(alignment: .center){
                 Color("LightGrey")
-                Image(uiImage: UIImage(named: buttonIcon)!)
+                Image(systemName: buttonIcon)
+//                    .resizable()
+//                    .frame(width: 15, height: 15)
             }
             .frame(width: 50, height: 50)
             .cornerRadius(50)
@@ -26,10 +27,11 @@ struct MenuListButton: View {
             Spacer()
             Image(systemName: "chevron.right")
         }
-        .onTapGesture {
-            if let safeAction = action{
-                safeAction()
-            }
-        }
+        .padding(.bottom, 10)
     }
+}
+
+#Preview {
+    MenuListButton(buttonName: "Account", buttonIcon: "person")
+        .padding()
 }
