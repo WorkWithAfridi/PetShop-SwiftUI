@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class OnbordingController: ObservableObject {
+class OnboardingController: ObservableObject {
     @Published var currentScreen = 0
     
     let onboardingScreens = [

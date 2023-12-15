@@ -10,4 +10,5 @@ import SwiftUI
 
 class AuthenticationController: ObservableObject {
     @Published var isSignedIn = false
+    @Published var showSheet = false
 }

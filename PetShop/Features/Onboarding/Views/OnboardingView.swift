@@ -10,16 +10,16 @@ import SwiftUI
 struct OnboardingView: View {
     @Namespace private var animation
     
-    @StateObject var onbordingController = OnbordingController()
+    @StateObject var onboardingController = OnboardingController()
     
     @State private var showSigninPage = false
     
     var body: some View {
         VStack{
-            TabView(selection: $onbordingController.currentScreen ){
-                ForEach(0..<onbordingController.onboardingScreens.count, id: \.self){
+            TabView(selection: $onboardingController.currentScreen ){
+                ForEach(0..<onboardingController.onboardingScreens.count, id: \.self){
                     index in
-                    let screenData = onbordingController.onboardingScreens[index]
+                    let screenData = onboardingController.onboardingScreens[index]
                     VStack{
                         HStack {
                             Text(screenData.title)
@@ -41,7 +41,7 @@ struct OnboardingView: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            DotsIndicator(numberOfScreens: onbordingController.onboardingScreens.count, currentScreen: onbordingController.currentScreen)
+            DotsIndicator(numberOfScreens: onboardingController.onboardingScreens.count, currentScreen: onboardingController.currentScreen)
                 .padding(.bottom, 24)
             PrimaryButton(titleString: "Get Started"){
                 showSigninPage.toggle()
