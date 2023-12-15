@@ -82,3 +82,8 @@ struct SigninView: View {
         }
     }
 }
+
+
+#Preview {
+    SigninView()
+}

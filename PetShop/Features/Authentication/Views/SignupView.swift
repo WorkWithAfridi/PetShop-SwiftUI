@@ -72,3 +72,8 @@ struct SignupView: View {
         .padding(.horizontal, 24)
     }
 }
+
+
+#Preview {
+    SignupView()
+}
