@@ -20,7 +20,7 @@ struct MinimizedItemView: View {
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .padding(10)
-                HStack(alignment: .center) {
+                HStack(alignment: .bottom) {
                     VStack(alignment: .leading) {
                         Text(product.title ?? "404")
                             .lineLimit(1)
@@ -36,8 +36,8 @@ struct MinimizedItemView: View {
                         Image(systemName: "plus")
                             .foregroundStyle(.white)
                     }
-                    .frame(width: 40, height: 40)
-                    .clipShape(RoundedRectangle(cornerRadius: 40))
+                    .frame(width: 35, height: 35)
+                    .clipShape(RoundedRectangle(cornerRadius: 35))
                 }
                 .padding(.horizontal, 15)
                 .padding(.bottom, 15)
