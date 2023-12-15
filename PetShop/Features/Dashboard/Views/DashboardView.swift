@@ -59,6 +59,14 @@ struct DashboardView: View {
                 }
             }
             .tag(3)
+            MenuView()
+            .tabItem {
+                VStack {
+                    Image(uiImage: UIImage(named: selectedTabIndex == 4 ?  "menu_filled" : "menu_outlined")!)
+                    Text("Menu")
+                }
+            }
+            .tag(4)
         }
         .tint(.orange)
     }
