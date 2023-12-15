@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct SignupView: View {
-    @Binding var showSignupPage : Bool
-    @Binding var showPage: Bool
     @State private var fnameController: String = ""
     @State private var emailController: String = ""
     @State private var passwordController: String = ""
     @State private var agreedToTermsandConditions = false
+    
     @EnvironmentObject var authenticationController: AuthenticationController
     
     var body: some View {
@@ -59,7 +58,7 @@ struct SignupView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(.orange))
                     .onTapGesture {
-                        showSignupPage.toggle()
+                        authenticationController.showSignupView = false
                     }
                 Spacer()
             }
@@ -67,7 +66,7 @@ struct SignupView: View {
             .padding(.bottom, 24)
             PrimaryButton(titleString: "Create account"){
                 authenticationController.isSignedIn = true
-                showPage.toggle()
+                authenticationController.showAuthBottomSheet = false
             }
         }
         .padding(.horizontal, 24)

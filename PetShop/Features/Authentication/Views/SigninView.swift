@@ -8,21 +8,14 @@
 import SwiftUI
 
 struct SigninView: View {
-    
-    @Binding var showPage: Bool
-    
-    //    @Environment(\.dismiss) var dismiss
     @State private var emailController: String = ""
     @State private var passwordController: String = ""
     
     @EnvironmentObject var authenticationController: AuthenticationController
     
-    @State private var showSignupPage = false
-    
-    
     var body: some View {
-        if showSignupPage {
-            SignupView(showSignupPage: $showSignupPage, showPage: $showPage)
+        if authenticationController.showSignupView {
+            SignupView()
         } else {
             VStack(alignment: .leading){
                 Spacer()
@@ -73,7 +66,7 @@ struct SigninView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(.orange))
                         .onTapGesture {
-                            showSignupPage.toggle()
+                            authenticationController.showSignupView = true
                         }
                     Spacer()
                 }
@@ -81,7 +74,7 @@ struct SigninView: View {
                 .padding(.bottom, 24)
                 PrimaryButton(titleString: "Signin"){
                     authenticationController.isSignedIn = true
-                    showPage.toggle()
+                    authenticationController.showAuthBottomSheet = true
                 }
                 
             }

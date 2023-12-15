@@ -11,8 +11,8 @@ struct OnboardingView: View {
     @Namespace private var animation
     
     @StateObject var onboardingController = OnboardingController()
-    
-    @State private var showSigninPage = false
+        
+    @EnvironmentObject var authenticationController: AuthenticationController
     
     var body: some View {
         VStack{
@@ -44,12 +44,13 @@ struct OnboardingView: View {
             DotsIndicator(numberOfScreens: onboardingController.onboardingScreens.count, currentScreen: onboardingController.currentScreen)
                 .padding(.bottom, 24)
             PrimaryButton(titleString: "Get Started"){
-                showSigninPage.toggle()
+                authenticationController.showAuthBottomSheet = true
+                authenticationController.showSignupView = false
             }
             .padding(.horizontal, 24)
         }
-        .sheet(isPresented: $showSigninPage) {
-            SigninView(showPage: $showSigninPage)
+        .sheet(isPresented: $authenticationController.showAuthBottomSheet) {
+            SigninView()
         }
     }
 }
