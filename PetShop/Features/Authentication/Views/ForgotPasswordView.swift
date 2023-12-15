@@ -39,4 +39,6 @@ struct ForgotPasswordView: View {
 
 #Preview {
     ForgotPasswordView()
+        .environmentObject(AuthenticationController())
+
 }

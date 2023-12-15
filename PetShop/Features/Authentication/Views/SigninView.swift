@@ -86,4 +86,5 @@ struct SigninView: View {
 
 #Preview {
     SigninView()
+        .environmentObject(AuthenticationController())
 }
