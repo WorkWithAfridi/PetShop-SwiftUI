@@ -25,7 +25,7 @@ struct ForgotPasswordView: View {
             HStack{
                 Spacer()
                 Text("Have an account?")
-                Text("Signin ")
+                Text("Signin")
                     .fontWeight(.bold)
                     .foregroundColor(Color(.orange))
                     .onTapGesture {
