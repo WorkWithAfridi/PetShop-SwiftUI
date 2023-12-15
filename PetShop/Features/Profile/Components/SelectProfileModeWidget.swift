@@ -18,6 +18,7 @@ struct SelectProfileModeWidget: View {
                     profileController.isProfileMode ? Color(.orange)
                         .clipShape(RoundedRectangle(cornerRadius: 100)) : nil
                     Text("Profile")
+                        .font(.subheadline)
                         .fontWeight(.medium)
                         .foregroundColor(profileController.isProfileMode ? .white : Color("898989"))
                         .frame(minWidth: 0, maxWidth: .infinity)
@@ -31,6 +32,7 @@ struct SelectProfileModeWidget: View {
                     profileController.isProfileMode ? nil : Color(.orange)
                         .clipShape(RoundedRectangle(cornerRadius: 100))
                     Text("Seller Mode")
+                        .font(.subheadline)
                         .fontWeight(.medium)
                         .foregroundColor(profileController.isProfileMode ? Color("898989") : .white)
                         .frame(minWidth: 0, maxWidth: .infinity)
