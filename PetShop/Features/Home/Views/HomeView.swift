@@ -20,7 +20,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         Spacer()
                         Text("View All")
-                            .font(.body)
+                            .font(.subheadline)
                             .foregroundStyle(.orange)
                     }
                     .padding(.horizontal, 16)
@@ -85,7 +85,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         Spacer()
                         Text("View All")
-                            .font(.body)
+                            .font(.subheadline)
                             .foregroundStyle(.orange)
                     }
                     .padding(.horizontal, 16)
