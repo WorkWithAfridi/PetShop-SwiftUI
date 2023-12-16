@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         VStack{
             HomeAppBar()
-            ScrollView {
+            ScrollView (showsIndicators: false){
                 VStack{
                     HomeBanner()
                     HStack(alignment: .bottom) {
@@ -34,47 +34,15 @@ struct HomeView: View {
                                     .fontWeight(.medium)
                                     .padding(.vertical, 15)
                             }
-                            .frame(width: 60)
+                            .frame(width: 60, height: 50)
                             .clipShape(RoundedRectangle(cornerRadius: 12))
                             .onTapGesture {}
                         Spacer()
-                        ZStack {
-                            true ? Color(.orange) : Color("F8F8F8")
-                            Text("Food")
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .foregroundColor(true ? Color(.white) : Color("898989") )
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .padding(.vertical, 15)
-                        }
-                        .frame(width: 70)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .onTapGesture {}
+                        HomeCategoryItem(isActive: true, title: "Food"){}
                         Spacer()
-                        ZStack {
-                            false ? Color(.orange) : Color("F8F8F8")
-                            Text("Toys")
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .foregroundColor(false ? Color(.white) : Color("898989") )
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .padding(.vertical, 15)
-                        }
-                        .frame(width: 70)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .onTapGesture {}
+                        HomeCategoryItem(isActive: true, title: "Toys"){}
                         Spacer()
-                        ZStack {
-                            false ? Color(.orange) : Color("F8F8F8")
-                            Text("Accessories")
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .foregroundColor(false ? Color(.white) : Color("898989") )
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .padding(.vertical, 15)
-                        }
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .onTapGesture {}
+                        HomeCategoryItem(isActive: true, title: "Accessories"){}
                         Spacer()
                         Spacer()
                     }
@@ -89,6 +57,38 @@ struct HomeView: View {
                             .foregroundStyle(.orange)
                     }
                     .padding(.horizontal, 16)
+                    LazyVGrid(
+                        columns: [
+                            GridItem(.flexible(), spacing: 16),
+                            GridItem(.flexible(), spacing: 16)
+                        ],
+                        alignment: .leading, spacing: 15) {
+                            ForEach(0..<4, id: \.self) { index in
+                                let product: ProductModel = demoProductList[index]
+                                MinimizedItemView(product: product)
+                            }
+                        }
+                        .padding(.bottom, 30)
+                        .padding(.horizontal, 16)
+                    HStack(alignment: .bottom) {
+                        Text("🔥 Trending Today")
+                            .font(.title2)
+                        .fontWeight(.bold)
+                        Spacer()
+                        Text("View All")
+                            .font(.subheadline)
+                            .foregroundStyle(.orange)
+                    }
+                    .padding(.horizontal, 16)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 15) {
+                            ForEach(0..<6) { index in
+                                let product: ProductModel = demoProductList[index]
+                                MinimizedItemView(product: product)
+                            }
+                        }
+                        .padding()
+                    }
                     Spacer()
                 }
             }
@@ -100,6 +100,17 @@ struct HomeView: View {
     HomeView()
 }
 
+struct ItemView: View {
+    var index: Int
+
+    var body: some View {
+        Text("Item \(index)")
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+    }
+}
 
 struct HomeBanner: View {
     var body: some View {

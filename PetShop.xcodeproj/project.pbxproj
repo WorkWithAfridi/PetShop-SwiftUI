@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5536F32B2DCF7D0093E812 /* HomeCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5536F22B2DCF7D0093E812 /* HomeCategoryItem.swift */; };
 		EF5BA5002B2C1B6C008D9B83 /* AuthPageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA4FF2B2C1B6C008D9B83 /* AuthPageEnum.swift */; };
 		EF5BA5022B2C1BCD008D9B83 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */; };
 		EF5BA5042B2C2229008D9B83 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5032B2C2229008D9B83 /* MenuView.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF5536F22B2DCF7D0093E812 /* HomeCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryItem.swift; sourceTree = "<group>"; };
 		EF5BA4FF2B2C1B6C008D9B83 /* AuthPageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPageEnum.swift; sourceTree = "<group>"; };
 		EF5BA5012B2C1BCD008D9B83 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		EF5BA5032B2C2229008D9B83 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD6B7B52B2D7AF000A07F4A /* HomeAppBar.swift */,
+				EF5536F22B2DCF7D0093E812 /* HomeCategoryItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				EF5BA5262B2C640B008D9B83 /* MinimizedItemView.swift in Sources */,
 				EFD6B7B42B2D770300A07F4A /* HomeView.swift in Sources */,
 				EF5BA5092B2C3EB2008D9B83 /* OutlinedButton.swift in Sources */,
+				EF5536F32B2DCF7D0093E812 /* HomeCategoryItem.swift in Sources */,
 				EF5BA5282B2C6AF2008D9B83 /* SellerModeView.swift in Sources */,
 				EFC37C9B2B2B14A5006C3D92 /* iOSCheckbox.swift in Sources */,
 				EFC37CA42B2B3443006C3D92 /* AuthenticationController.swift in Sources */,

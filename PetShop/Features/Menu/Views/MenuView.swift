@@ -30,7 +30,7 @@ struct MenuView: View {
             .padding(.horizontal, 12)
             .padding(.vertical, 10)
             Divider()
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading) {
                     Text("Account")
                         .font(.title3)

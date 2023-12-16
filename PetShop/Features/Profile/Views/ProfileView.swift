@@ -13,7 +13,7 @@ struct ProfileView: View {
         VStack{
             SelectProfileModeWidget()
                 .padding(.horizontal, 60)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 if profileController.isProfileMode{
                     ProfileModeView()
                 } else{

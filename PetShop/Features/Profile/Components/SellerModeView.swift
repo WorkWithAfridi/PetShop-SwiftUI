@@ -12,7 +12,7 @@ struct SellerModeView: View {
     @EnvironmentObject var profileController: ProfileController
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack{
                 ZStack{
                     VStack {
