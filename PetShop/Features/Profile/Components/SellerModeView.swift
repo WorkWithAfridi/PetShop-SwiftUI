@@ -16,7 +16,7 @@ struct SellerModeView: View {
             VStack{
                 ZStack{
                     VStack {
-                        NetworkImage(imageUrl: "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+                        NetworkImage(imageUrl: "https://marketplace.canva.com/EAFHyNmJynw/1/0/1600w/canva-white-pet-shop-facebook-cover-2jWh0zUk8_0.jpg")
                             .frame(height: 200)
                             .frame(maxWidth: .infinity)
                             .clipShape(RoundedRectangle(cornerRadius: 30))
@@ -25,16 +25,17 @@ struct SellerModeView: View {
                     VStack (alignment: .center){
                         Spacer()
                         CircularAvatar(
-                            imageUrl: "https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", radius: 120)
+                            imageUrl: "https://scalebranding.com/wp-content/uploads/2022/02/eco-bird-food-logo.jpg", radius: 120)
                     }
                 }
                 .frame(height: 260)
                 .frame(maxWidth: .infinity)
                 .padding(.top, 5)
-                Text("Scarlet Brown Smith")
+                Text("Scars Goodies")
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding(.bottom, 5)
+                    .padding(.top, 15)
                 HStack{
                     Spacer()
                     VStack{

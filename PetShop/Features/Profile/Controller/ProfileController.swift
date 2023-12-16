@@ -8,7 +8,7 @@
 import Foundation
 
 class ProfileController : ObservableObject {
-    @Published var isProfileMode : Bool = false
+    @Published var isProfileMode : Bool = true
     @Published var sellerModePage: SellerModePageEnum = SellerModePageEnum.Product
     
     
