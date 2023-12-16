@@ -28,13 +28,15 @@ struct HomeAppBar: View {
             }
             Spacer()
             HStack{
-                Color(.white)
-                    .overlay(
-                        Image(systemName: "magnifyingglass")
-                    )
-                    .frame(width: 40, height: 40)
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
-                    .shadow(color: Color("E5E4E3") ,radius: 10)
+                NavigationLink(destination: HomeViewSearch()) {
+                    Color(.white)
+                        .overlay(
+                            Image(systemName: "magnifyingglass")
+                        )
+                        .frame(width: 40, height: 40)
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .shadow(color: Color("E5E4E3") ,radius: 10)
+                }
                 Color(.white)
                     .overlay(
                         Image(systemName: "bell")

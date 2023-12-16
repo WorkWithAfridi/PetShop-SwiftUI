@@ -40,9 +40,9 @@ struct HomeView: View {
                         Spacer()
                         HomeCategoryItem(isActive: true, title: "Food"){}
                         Spacer()
-                        HomeCategoryItem(isActive: true, title: "Toys"){}
+                        HomeCategoryItem(isActive: false, title: "Toys"){}
                         Spacer()
-                        HomeCategoryItem(isActive: true, title: "Accessories"){}
+                        HomeCategoryItem(isActive: false, title: "Accessories"){}
                         Spacer()
                         Spacer()
                     }
