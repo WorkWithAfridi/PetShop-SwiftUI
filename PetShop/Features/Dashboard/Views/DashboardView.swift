@@ -12,11 +12,7 @@ struct DashboardView: View {
     @StateObject var profileController: ProfileController = ProfileController()
     var body: some View {
         TabView(selection: $selectedTabIndex){
-            VStack {
-                Spacer()
-                Text("Home")
-                Spacer()
-            }
+            HomeView()
             .tabItem {
                 VStack {
                     Image(uiImage: UIImage(named: selectedTabIndex == 0 ?  "home_filled" : "home_outlined")!).accentColor(.orange)

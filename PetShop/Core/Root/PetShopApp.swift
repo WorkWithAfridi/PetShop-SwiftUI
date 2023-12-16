@@ -15,6 +15,7 @@ struct PetShopApp: App {
         WindowGroup {
             NavigationStack{
                 ContentView()
+                    .background(Color("FFFFFF"))
             }
             .environmentObject(authenticationController)
         }
