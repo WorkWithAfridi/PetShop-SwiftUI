@@ -12,7 +12,6 @@ struct ProductDetailView: View {
     @State private var quantity = 1
     @State private var showDetailedDescription = false
     var body: some View {
-        
         VStack(alignment: .leading){
             HStack{
                 Color(.white)
@@ -119,9 +118,6 @@ struct ProductDetailView: View {
                         } : nil
                     }
                     .padding(.bottom)
-                    
-                    HorizontalDivider()
-                        .padding(.bottom)
                     Spacer()
                     
                 }
@@ -130,7 +126,7 @@ struct ProductDetailView: View {
             }
         }
         .padding(.horizontal, 16)
-        
+        .navigationBarHidden(true)
     }
 }
 
