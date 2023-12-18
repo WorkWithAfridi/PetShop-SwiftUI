@@ -65,7 +65,7 @@ struct HomeView: View {
                         alignment: .leading, spacing: 15) {
                             ForEach(0..<4, id: \.self) { index in
                                 let product: ProductModel = demoProductList[index]
-                                MinimizedItemView(product: product)
+                                MinimizedProductView(product: product)
                             }
                         }
                         .padding(.bottom, 30)
@@ -84,7 +84,7 @@ struct HomeView: View {
                         HStack(spacing: 15) {
                             ForEach(0..<6) { index in
                                 let product: ProductModel = demoProductList[index]
-                                MinimizedItemView(product: product)
+                                MinimizedProductView(product: product)
                             }
                         }
                         .padding()

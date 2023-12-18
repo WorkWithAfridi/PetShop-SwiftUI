@@ -1,5 +1,5 @@
 //
-//  MinimizedItemView.swift
+//  MinimizedProductView.swift
 //  PetShop
 //
 //  Created by Khondakar Afridi on 12/15/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct MinimizedItemView: View {
+struct MinimizedProductView: View {
     var product: ProductModel
     var body: some View {
         ZStack {
@@ -50,5 +50,5 @@ struct MinimizedItemView: View {
 }
 
 #Preview {
-    MinimizedItemView(product: demoProductList.first!)
+    MinimizedProductView(product: demoProductList.first!)
 }

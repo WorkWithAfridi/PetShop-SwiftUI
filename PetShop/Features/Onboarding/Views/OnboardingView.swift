@@ -23,7 +23,7 @@ struct OnboardingView: View {
                     VStack{
                         HStack {
                             Text(screenData.title)
-                                .font(.largeTitle)
+                                .font(.title)
                                 .fontWeight(.bold)
                             Spacer()
                         }

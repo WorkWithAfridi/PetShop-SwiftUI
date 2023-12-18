@@ -16,7 +16,7 @@ struct SellerModeProductView: View {
             ],
             alignment: .leading, spacing: 15) {
                 ForEach(demoProductList, id: \.id) { product in
-                    MinimizedItemView(product: product)
+                    MinimizedProductView(product: product)
                 }
             }
             .padding(.bottom, 30)
