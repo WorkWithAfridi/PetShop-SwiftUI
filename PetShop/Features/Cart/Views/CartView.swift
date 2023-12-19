@@ -89,16 +89,21 @@ struct CartAppBar: View {
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         HStack{
-            Color(.white)
-                .overlay(
-                    Image(systemName: "chevron.backward")
-                )
-                .frame(width: 40, height: 40)
-                .clipShape(RoundedRectangle(cornerRadius: 14))
-                .shadow(color: Color("E5E4E3") ,radius: 10)
-                .onTapGesture {
-                    dismiss()
-                }
+            if showBackButton {
+                Color(.white)
+                    .overlay(
+                        Image(systemName: "chevron.backward")
+                    )
+                    .frame(width: 40, height: 40)
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .shadow(color: Color("E5E4E3") ,radius: 10)
+                    .onTapGesture {
+                        dismiss()
+                    }
+            } else {
+                Color(.white)
+                    .frame(width: 40, height: 40)
+            }
             Spacer()
             Text("Cart")
                 .font(.body)
@@ -151,40 +156,46 @@ struct RoundedCorners: View {
 struct CartItem: View {
     var product: ProductModel
     var body: some View {
-        Color(.white)
-            .overlay(
-                HStack {
-                    Color("E5E4E3")
-                        .overlay(
-                            NetworkImage(imageUrl: product.imageUrl ?? "")
-                                .aspectRatio(contentMode: .fill)
-                        )
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .frame(maxWidth: 100, maxHeight: 100)
-                    VStack(alignment: .leading) {
-                        Text(product.title ?? "")
-                            .font(.body)
-                            .fontWeight(.medium)
-                            .padding(.top, 6)
-                        Text("for 2-3 y/o")
-                            .font(.subheadline)
-                            .foregroundStyle(Color("898989"))
-                        Spacer()
-                        Text("$\(product.price ?? "")")
-                            .foregroundStyle(.orange)
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .padding(.top, 6)
+        NavigationLink {
+            ProductDetailView()
+        } label: {
+            Color(.white)
+                .overlay(
+                    HStack {
+                        Color("E5E4E3")
+                            .overlay(
+                                NetworkImage(imageUrl: product.imageUrl ?? "")
+                                    .aspectRatio(contentMode: .fill)
+                            )
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .frame(maxWidth: 100, maxHeight: 100)
+                        VStack(alignment: .leading) {
+                            Text(product.title ?? "")
+                                .font(.body)
+                                .foregroundStyle(.black)
+                                .fontWeight(.medium)
+                                .padding(.top, 6)
+                            Text("for 2-3 y/o")
+                                .font(.subheadline)
+                                .foregroundStyle(Color("898989"))
+                            Spacer()
+                            Text("$\(product.price ?? "")")
+                                .foregroundStyle(.orange)
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .padding(.top, 6)
+                            Spacer()
+                        }
                         Spacer()
                     }
-                    Spacer()
-                }
-                    .padding(8)
-            )
-            .frame(height: 110)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
-            .shadow(color: Color("E5E4E3"),radius: 10)
-            .padding(.bottom, 10)
-            .padding(.horizontal, 16)
+                        .padding(8)
+                )
+                .frame(height: 110)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .shadow(color: Color("E5E4E3"),radius: 10)
+                .padding(.bottom, 10)
+                .padding(.horizontal, 16)
+        }
+        
     }
 }
