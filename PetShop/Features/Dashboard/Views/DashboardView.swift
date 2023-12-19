@@ -22,13 +22,13 @@ struct DashboardView: View {
                 .tag(0)
             VStack {
                 Spacer()
-                Text("Favorites")
+                Text("Wish list")
                 Spacer()
             }
             .tabItem {
                 VStack {
                     Image(uiImage: UIImage(named: selectedTabIndex == 1 ?  "star_filled" : "star_outlined")!)
-                    Text("Favorites")
+                    Text("Wish")
                 }
             }
             .tag(1)
