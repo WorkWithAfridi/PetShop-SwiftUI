@@ -433,7 +433,6 @@
 			isa = PBXGroup;
 			children = (
 				EFD6B7B22B2D76E900A07F4A /* Components */,
-				EFD6B7B12B2D76E300A07F4A /* Controller */,
 				EFD6B7B02B2D76DD00A07F4A /* Views */,
 			);
 			path = Home;
@@ -445,13 +444,6 @@
 				EFD6B7B32B2D770300A07F4A /* HomeView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		EFD6B7B12B2D76E300A07F4A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		EFD6B7B22B2D76E900A07F4A /* Components */ = {

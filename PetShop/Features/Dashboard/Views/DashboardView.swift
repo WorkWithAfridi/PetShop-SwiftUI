@@ -13,13 +13,13 @@ struct DashboardView: View {
     var body: some View {
         TabView(selection: $selectedTabIndex){
             HomeView()
-            .tabItem {
-                VStack {
-                    Image(uiImage: UIImage(named: selectedTabIndex == 0 ?  "home_filled" : "home_outlined")!).accentColor(.orange)
-                    Text("Home")
+                .tabItem {
+                    VStack {
+                        Image(uiImage: UIImage(named: selectedTabIndex == 0 ?  "home_filled" : "home_outlined")!).accentColor(.orange)
+                        Text("Home")
+                    }
                 }
-            }
-            .tag(0)
+                .tag(0)
             VStack {
                 Spacer()
                 Text("Favorites")
@@ -32,35 +32,31 @@ struct DashboardView: View {
                 }
             }
             .tag(1)
-            VStack {
-                Spacer()
-                Text("Cart")
-                Spacer()
-            }
-            .tabItem {
-                VStack {
-                    Image(uiImage: UIImage(named: selectedTabIndex == 2 ?  "cart_filled" : "cart_outlined")!)
-                    Text("Cart")
+            CartView(showBackButton: false)
+                .tabItem {
+                    VStack {
+                        Image(uiImage: UIImage(named: selectedTabIndex == 2 ?  "cart_filled" : "cart_outlined")!)
+                        Text("Cart")
+                    }
                 }
-            }
-            .tag(2)
+                .tag(2)
             ProfileView()
                 .environmentObject(profileController)
-            .tabItem {
-                VStack {
-                    Image(uiImage: UIImage(named: selectedTabIndex == 3 ?  "profile_filled" : "profile_outlined")!)
-                    Text("Person")
+                .tabItem {
+                    VStack {
+                        Image(uiImage: UIImage(named: selectedTabIndex == 3 ?  "profile_filled" : "profile_outlined")!)
+                        Text("Person")
+                    }
                 }
-            }
-            .tag(3)
+                .tag(3)
             MenuView()
-            .tabItem {
-                VStack {
-                    Image(uiImage: UIImage(named: selectedTabIndex == 4 ?  "menu_filled" : "menu_outlined")!)
-                    Text("Menu")
+                .tabItem {
+                    VStack {
+                        Image(uiImage: UIImage(named: selectedTabIndex == 4 ?  "menu_filled" : "menu_outlined")!)
+                        Text("Menu")
+                    }
                 }
-            }
-            .tag(4)
+                .tag(4)
         }
         .tint(.orange)
         .onAppear {

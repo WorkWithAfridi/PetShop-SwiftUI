@@ -13,12 +13,16 @@ class ProductModel : Identifiable{
     var imageUrl: String?
     var description: String?
     var price: String?
+    var offset: CGFloat?
+    var isSwiped: Bool?
     
     init(title: String, description: String, imageUrl: String, price: String) {
         self.title = title
         self.description = description
         self.imageUrl = imageUrl
         self.price = price
+        self.offset = 0
+        self.isSwiped = false
     }
 }
 
