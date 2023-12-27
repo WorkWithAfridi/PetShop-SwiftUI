@@ -11,13 +11,18 @@ import SwiftData
 @main
 struct PetShopApp: App {
     @StateObject var authenticationController = AuthenticationController()
+    @StateObject var navigationController = NavigationController()
+    
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
+            NavigationStack(path: $navigationController.path) {
                 ContentView()
-                    .background(Color("FFFFFF"))
+                    .navigationDestination(for: Route.self, destination: { route in
+                        GetView(route: route)
+                    })
             }
             .environmentObject(authenticationController)
+            .environmentObject(navigationController)
         }
     }
 }

@@ -27,6 +27,9 @@
 		EF5BA52D2B2C72F6008D9B83 /* SellerModeProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA52C2B2C72F6008D9B83 /* SellerModeProductView.swift */; };
 		EF5BA52F2B2C7312008D9B83 /* SellerModeSoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA52E2B2C7312008D9B83 /* SellerModeSoldView.swift */; };
 		EF5BA5312B2C73FA008D9B83 /* SellerModePageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA5302B2C73FA008D9B83 /* SellerModePageSelector.swift */; };
+		EF8068A52B3C04F100F242DC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068A42B3C04F100F242DC /* NavigationController.swift */; };
+		EF8068A82B3C052400F242DC /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068A72B3C052400F242DC /* RouteManager.swift */; };
+		EF8068AA2B3C053600F242DC /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068A92B3C053600F242DC /* Routes.swift */; };
 		EFC37C462B2AFE87006C3D92 /* PetShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */; };
 		EFC37C4C2B2AFE89006C3D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */; };
 		EFC37C4F2B2AFE89006C3D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC37C4E2B2AFE89006C3D92 /* Preview Assets.xcassets */; };
@@ -89,6 +92,9 @@
 		EF5BA52C2B2C72F6008D9B83 /* SellerModeProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerModeProductView.swift; sourceTree = "<group>"; };
 		EF5BA52E2B2C7312008D9B83 /* SellerModeSoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerModeSoldView.swift; sourceTree = "<group>"; };
 		EF5BA5302B2C73FA008D9B83 /* SellerModePageSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerModePageSelector.swift; sourceTree = "<group>"; };
+		EF8068A42B3C04F100F242DC /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		EF8068A72B3C052400F242DC /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		EF8068A92B3C053600F242DC /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		EFC37C422B2AFE87006C3D92 /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC37C452B2AFE87006C3D92 /* PetShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopApp.swift; sourceTree = "<group>"; };
 		EFC37C4B2B2AFE89006C3D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,6 +260,32 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		EF8068A22B3C04D000F242DC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068A62B3C050900F242DC /* Helpers */,
+				EF8068A32B3C04E100F242DC /* Controller */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EF8068A32B3C04E100F242DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068A42B3C04F100F242DC /* NavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF8068A62B3C050900F242DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068A72B3C052400F242DC /* RouteManager.swift */,
+				EF8068A92B3C053600F242DC /* Routes.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EFC37C392B2AFE87006C3D92 = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +325,7 @@
 		EFC37C712B2AFE92006C3D92 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EF8068A22B3C04D000F242DC /* Navigation */,
 				EF5BA5242B2C595A008D9B83 /* Assets */,
 				EF5BA5212B2C5679008D9B83 /* Data */,
 				EFC37C942B2B01AA006C3D92 /* Root */,
@@ -612,6 +645,7 @@
 			files = (
 				EF5BA5072B2C25C3008D9B83 /* MenuListButton.swift in Sources */,
 				EF5BA5312B2C73FA008D9B83 /* SellerModePageSelector.swift in Sources */,
+				EF8068A52B3C04F100F242DC /* NavigationController.swift in Sources */,
 				EF5BA51C2B2C487E008D9B83 /* NetworkImage.swift in Sources */,
 				EFC37C7A2B2AFF61006C3D92 /* CustomTextField.swift in Sources */,
 				EFC37C932B2B009F006C3D92 /* SigninView.swift in Sources */,
@@ -631,6 +665,7 @@
 				EFC37C8A2B2B001C006C3D92 /* OnboardingScreenModel.swift in Sources */,
 				EF5BA51E2B2C4A95008D9B83 /* CircularAvatar.swift in Sources */,
 				EFC37C8D2B2B0037006C3D92 /* OnboardingView.swift in Sources */,
+				EF8068AA2B3C053600F242DC /* Routes.swift in Sources */,
 				EFC37C742B2AFEAE006C3D92 /* DotsIndicator.swift in Sources */,
 				EFC37C762B2AFEFB006C3D92 /* PrimaryButton.swift in Sources */,
 				EFE00E482B302F9B002306E7 /* ProductDetailView.swift in Sources */,
@@ -642,6 +677,7 @@
 				EF5BA51A2B2C4794008D9B83 /* SelectProfileModeWidget.swift in Sources */,
 				EFE00E4C2B306836002306E7 /* CartView.swift in Sources */,
 				EF5BA5022B2C1BCD008D9B83 /* AuthenticationView.swift in Sources */,
+				EF8068A82B3C052400F242DC /* RouteManager.swift in Sources */,
 				EF5BA52B2B2C6D88008D9B83 /* SellerModePageEnum.swift in Sources */,
 				EFC37C782B2AFF44006C3D92 /* HorizontalDivider.swift in Sources */,
 				EFC37C992B2B131F006C3D92 /* SignupView.swift in Sources */,
